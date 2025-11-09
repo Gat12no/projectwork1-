@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZhimpaZhimpa - Recipes</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>ZhimpaZhimpa</h1>
+    <p>Recipe sharing for food lovers 🍲</p>
+  </header>
+
+  <main>
+    <section id="new-recipe">
+      <h2>Post a Quick Recipe</h2>
+      <form id="recipeForm">
+        <input name="title" placeholder="Recipe Title" required />
+        <input name="author" placeholder="Author (optional)" />
+        <textarea name="ingredients" placeholder="Ingredients (one per line)"></textarea>
+        <textarea name="steps" placeholder="Cooking Steps"></textarea>
+        <input name="imageUrl" placeholder="Image URL (optional)" />
+        <button type="submit">Post Recipe</button>
+      </form>
+    </section>
+
+    <section id="feed">
+      <h2>Latest Recipes</h2>
+      <div id="recipes"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

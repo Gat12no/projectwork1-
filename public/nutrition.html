@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nutrition Preview</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Nutrition Preview</h1>
+    <p><a href="/">← Back to recipes</a></p>
+  </header>
+
+  <main>
+    <section id="recipe-info">
+      <h2 id="recipe-title"></h2>
+      <p id="recipe-ingredients"></p>
+    </section>
+
+    <section id="nutrition-preview">
+      <h3>Preview</h3>
+      <div id="preview-container"></div>
+      <div style="margin-top:12px">
+        <form id="spoon-form">
+          <textarea id="ingredientList" placeholder="1 banana\n2 tbsp peanut butter\n1 cup milk" rows="6" style="width:100%"></textarea>
+          <div style="margin-top:8px">
+            <label>Servings: <input id="servings" type="number" value="1" min="1" style="width:70px" /></label>
+            <button id="spoon-btn" type="submit" style="margin-left:8px">Analyze with Spoonacular</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="nutrition-raw">
+      <h3>Raw response</h3>
+      <pre id="raw-json"></pre>
+    </section>
+  </main>
+
+  <script src="/nutrition.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# dotenv
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+.pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Misc
+.cache/
+.parcel-cache/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database files (if any)
+*.sqlite
+
+# Generated files
+/.next
+/out
